@@ -1,0 +1,279 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=description content>
+<link rel=icon href=/images/favicon.png type=image/png>
+<title>Editor :: TAPAAL Documentation</title>
+<link href=/css/nucleus.css?1640952846 rel=stylesheet>
+<link href=/css/fontawesome-all.min.css?1640952846 rel=stylesheet>
+<link href=/css/hybrid.css?1640952846 rel=stylesheet>
+<link href=/css/featherlight.min.css?1640952846 rel=stylesheet>
+<link href=/css/perfect-scrollbar.min.css?1640952846 rel=stylesheet>
+<link href=/css/auto-complete.css?1640952846 rel=stylesheet>
+<link href=/css/atom-one-dark-reasonable.css?1640952846 rel=stylesheet>
+<link href=/css/theme.css?1640952846 rel=stylesheet>
+<link href=/css/tabs.css?1640952846 rel=stylesheet>
+<link href=/css/hugo-theme.css?1640952846 rel=stylesheet>
+<link href=/css/theme-blue.css?1640952846 rel=stylesheet>
+<script src=/js/jquery-3.3.1.min.js?1640952846></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=/gui/editor/>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<div style=font-family:Helvetica,sans-serif;text-transform:uppercase;color:#222;font-size:2.5rem;margin:0;padding:0>
+<a id=logo href></a>
+<img width=70px src=/images/tapaal-128x128.png alt=tapaal-logo> <b style=vertical-align:top>TAPAAL</b>
+</a>
+</div>
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=/js/lunr.min.js?1640952846></script>
+<script type=text/javascript src=/js/auto-complete.js?1640952846></script>
+<script type=text/javascript>var baseurl=""</script>
+<script type=text/javascript src=/js/search.js?1640952846></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=/><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/gui/ title="GUI Reference" class="dd-item
+parent">
+<a href=/gui/>
+<b>1. </b>GUI Reference
+</a>
+<ul>
+<li data-nav-id=/gui/main-window/ title=Overview class=dd-item>
+<a href=/gui/main-window/>
+Overview
+</a>
+</li>
+<li data-nav-id=/gui/editor/ title=Editor class="dd-item active">
+<a href=/gui/editor/>
+Editor
+</a>
+</li>
+<li data-nav-id=/gui/simulation/ title=Simulation class=dd-item>
+<a href=/gui/simulation/>
+Simulation
+</a>
+</li>
+<li data-nav-id=/gui/verification/ title=Verification class=dd-item>
+<a href=/gui/verification/>
+Verification
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/command-line/ title="Command Line" class=dd-item>
+<a href=/command-line/>
+<b>5. </b>Command Line
+</a>
+</li>
+</ul>
+<section id=footer>
+<p>(c) 2008-2020 <a href=https://www.tapaal.net>TAPAAL Team</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=/></a> > <a href=/gui/>GUI Reference</a> > Editor
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#draw>Draw</a>
+<ul>
+<li><a href=#quick-draw>Quick Draw</a></li>
+</ul>
+</li>
+<li><a href=#edit-elements>Edit Elements</a>
+<ul>
+<li><a href=#arc-path>Arc Path</a></li>
+</ul>
+</li>
+<li><a href=#components>Components</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<div id=body-inner>
+<h1>
+Editor
+</h1>
+<p>To start editing a Petri Net, open an existing net using the open dialog, open an example net from the <code>File - Example Net</code> menu, or create a new net by selecting <code>File - New net</code>.</p>
+<p>If you create a new net, select the modeling features you are interested in using. Depending on the features selected the GUI will adopt the available options.</p>
+<p>Normally you will select a draw tool from the Toolbar, or using a hotkey, you can lookup hotkeys in the draw menu.</p>
+<p><img src=draw-tools.png alt="Draw Toolbar"></p>
+<table>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Tool</th>
+<th>Feature</th>
+<th>Hotkey</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src=icons/select.png alt=select></td>
+<td>Select</td>
+<td>Any</td>
+<td>S</td>
+</tr>
+<tr>
+<td><img src=icons/place.png alt=place></td>
+<td>Place</td>
+<td>Any</td>
+<td>P</td>
+</tr>
+<tr>
+<td><img src=icons/transition.png alt=transition></td>
+<td>Transition</td>
+<td>Any</td>
+<td>T</td>
+</tr>
+<tr>
+<td><img src=icons/urgent-transition.png alt="urgent transition"></td>
+<td>Urgent Transition</td>
+<td>Timed</td>
+<td>Y</td>
+</tr>
+<tr>
+<td><img src=icons/uncontrollable-transition.png alt="Uncontrollable Transition"></td>
+<td>Uncontrollable Transition</td>
+<td>Game</td>
+<td>L</td>
+</tr>
+<tr>
+<td><img src=icons/uncontrollable-urgent-transition.png alt="Uncontrollable Urgent Transition"></td>
+<td>Uncontrollable Urgent Transition</td>
+<td>Game + Time</td>
+<td>O</td>
+</tr>
+<tr>
+<td><img src=icons/arc.png alt=arc></td>
+<td>Arc</td>
+<td>Any</td>
+<td>A</td>
+</tr>
+<tr>
+<td><img src=icons/transport-arc.png alt="transport arc"></td>
+<td>Transport Arc</td>
+<td>Timed</td>
+<td>R</td>
+</tr>
+<tr>
+<td><img src=icons/inhibitor-arc.png alt="inhibitor arc"></td>
+<td>Inhibitor Arc</td>
+<td>Timed</td>
+<td>I</td>
+</tr>
+<tr>
+<td><img src=icons/annotation.png alt=annotation></td>
+<td>Annotation/Note</td>
+<td>Any</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+<p>For details about the semantics of each elements please reference the corresponding semantics section: TODO</p>
+<h2 id=draw>Draw</h2>
+<p>To start drawing select a draw tool from the toolbar, or using a hotkey.
+To place a place, transition or Annotation click anywhere on the canvas to place the element.
+For arcs, start by clicking a suitable start place or transition and clicking again to complete drawing the arc. The arc will automatically snap to any valid targe component.</p>
+<p><img src=draw.gif alt=Drawing></p>
+<p>TAPAAL will always make sure that the net is syntactically removing the need to preform extra syntax checking. TAPAAL will prevent you for adding invalid structures and display an warning if you try to violate the syntax.</p>
+<p>Press <code>Select</code> or <code>S</code> at any time to go back to selection mode.</p>
+<h3 id=quick-draw>Quick Draw</h3>
+<p>When connecting an arc to a target, you can continue drawing an arc from the target location by holding <code>ctrl</code> while clicking the target.
+You can also press the canvas while holding <code>ctrl</code> to create a new place or transition and connect the arc to this.</p>
+<p><img src=quickdraw.gif alt="Quick Draw"></p>
+<h2 id=edit-elements>Edit Elements</h2>
+<p>Places and transition, including there text labels can be moved by moving the mouse to then, holding down left mouse button and dragging the mouse.</p>
+<p>In selection mode you can select a single element by clicking it, or multilabel elements by holding down the left mouse button and dragging the mouse. You can further manipulate the selected elements by holding <code>Shift</code> and selecting individual elements, adding or removing the from the current selection.
+Use hotkey <code>Ctrl + a</code> to select all elements.</p>
+<p>You can delete the current selection by pressings <code>Backspace</code> or <code>Delete</code> or selecting <code>Delete</code> from the menu. You can move all selected elements by holding mouse down left mouse button and moving the mouse.</p>
+<p><img src=moveAndDelete.gif alt="Select, move and delete"></p>
+<p>Click anywhere in the canvas to deselect all elements.</p>
+<p>Text labels related to places, transitions and arc, can be repossession by dragging them. They will maintain there position relative to the parent object.
+Place and transition names can also be hidden, by right clicking and selecting <code>Hide Name</code>.</p>
+<p><img src=movelabels.gif alt="Move and Hide Labels"></p>
+<p>You can edit an place, transition or arc by right clicking it and selecting <code>Edit</code> from the popup menu, or by double clicking it.
+This will bring up an menu that allows you to change the properties of the element. The options available will depend on the chosen model features.</p>
+<p><img src=edit.gif alt="Edit place transition or arc"></p>
+<h3 id=arc-path>Arc Path</h3>
+<p>When drawing in arc you can curve the path of the arc by clicking the canvas, by default it will create a straight corner, holding <code>shift</code> will create a curved corner.</p>
+<p><img src=arcpath.png alt="Arc Path"></p>
+<p>After a arc is drawn a new path point can be inserted by double clicking the arc while holding down <code>ctrl</code>, or by right-clicking the arc and selecting <code>Insert point</code>.</p>
+<p>By default arc points are hidden, by moving the mouse over an arc or by selecting an arc they will be displayed. You can select and drag path point to move the path of the arc.
+Right-clicking an path point allows you to remove it or change the curve type.</p>
+<p><img src=edit-arcpath.png alt="Edit arc path"></p>
+<h2 id=components>Components</h2>
+<p>TAPAAL allows you to decompose larger models into components. Components are connected via shared places and transitions (draw with a dotted line):</p>
+<p><img src=shared-pt.png alt="Shared place and transition"></p>
+<p>A share place/transition can be added to any number of components and thereby connect to components.</p>
+<p>New components can be created in the Components section in the side menu:</p>
+<p><img src=components.png alt=Components></p>
+<p>Select <code>new</code> to create a new component, or select <code>copy</code> to create a new component based on the current component.</p>
+<p>You can create new share places and transitions from the side menu using the <code>Shared places and transitions</code> section of the side menu. From the dropdown menu select either share place or shared transitions and select <code>new</code>.</p>
+<p>To add an existing share place or transition to a component. Add a place or transition and right click and select <code>Edit</code>. Check the Shared checkbox and select a shared element from the dropdown. A new share place or transitions can also be created directly by pressing the <code>make shared</code> button.</p>
+<p><img src=shared-place.png alt="Shared place"></p>
+<p>A component can be disabled by removing the checkmark in the components section. Disabled components are ignored in verification and simulation. This can be useful to create different implementation for a part of the system and swap between them.</p>
+<p>Shared components can be merged into a single component by selecting <code>Merge net components</code> from the <code>tools</code> menu.</p>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=/gui/main-window/ title=Overview> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/gui/simulation/ title=Simulation style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=/js/clipboard.min.js?1640952846></script>
+<script src=/js/perfect-scrollbar.min.js?1640952846></script>
+<script src=/js/perfect-scrollbar.jquery.min.js?1640952846></script>
+<script src=/js/jquery.sticky.js?1640952846></script>
+<script src=/js/featherlight.min.js?1640952846></script>
+<script src=/js/highlight.pack.js?1640952846></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=/js/modernizr.custom-3.6.0.js?1640952846></script>
+<script src=/js/learn.js?1640952846></script>
+<script src=/js/hugo-learn.js?1640952846></script>
+<script src=/mermaid/mermaid.js?1640952846></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>

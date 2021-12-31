@@ -1,0 +1,285 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.91.2">
+<meta name=description content>
+<link rel=icon href=/images/favicon.png type=image/png>
+<title>Overview :: TAPAAL Documentation</title>
+<link href=/css/nucleus.css?1640952846 rel=stylesheet>
+<link href=/css/fontawesome-all.min.css?1640952846 rel=stylesheet>
+<link href=/css/hybrid.css?1640952846 rel=stylesheet>
+<link href=/css/featherlight.min.css?1640952846 rel=stylesheet>
+<link href=/css/perfect-scrollbar.min.css?1640952846 rel=stylesheet>
+<link href=/css/auto-complete.css?1640952846 rel=stylesheet>
+<link href=/css/atom-one-dark-reasonable.css?1640952846 rel=stylesheet>
+<link href=/css/theme.css?1640952846 rel=stylesheet>
+<link href=/css/tabs.css?1640952846 rel=stylesheet>
+<link href=/css/hugo-theme.css?1640952846 rel=stylesheet>
+<link href=/css/theme-blue.css?1640952846 rel=stylesheet>
+<script src=/js/jquery-3.3.1.min.js?1640952846></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=/gui/main-window/>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<div style=font-family:Helvetica,sans-serif;text-transform:uppercase;color:#222;font-size:2.5rem;margin:0;padding:0>
+<a id=logo href></a>
+<img width=70px src=/images/tapaal-128x128.png alt=tapaal-logo> <b style=vertical-align:top>TAPAAL</b>
+</a>
+</div>
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=/js/lunr.min.js?1640952846></script>
+<script type=text/javascript src=/js/auto-complete.js?1640952846></script>
+<script type=text/javascript>var baseurl=""</script>
+<script type=text/javascript src=/js/search.js?1640952846></script>
+</div>
+<section id=homelinks>
+<ul>
+<li>
+<a class=padding href=/><i class="fas fa-home"></i> Home</a>
+</li>
+</ul>
+</section>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/gui/ title="GUI Reference" class="dd-item
+parent">
+<a href=/gui/>
+<b>1. </b>GUI Reference
+</a>
+<ul>
+<li data-nav-id=/gui/main-window/ title=Overview class="dd-item active">
+<a href=/gui/main-window/>
+Overview
+</a>
+</li>
+<li data-nav-id=/gui/editor/ title=Editor class=dd-item>
+<a href=/gui/editor/>
+Editor
+</a>
+</li>
+<li data-nav-id=/gui/simulation/ title=Simulation class=dd-item>
+<a href=/gui/simulation/>
+Simulation
+</a>
+</li>
+<li data-nav-id=/gui/verification/ title=Verification class=dd-item>
+<a href=/gui/verification/>
+Verification
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/command-line/ title="Command Line" class=dd-item>
+<a href=/command-line/>
+<b>5. </b>Command Line
+</a>
+</li>
+</ul>
+<section id=footer>
+<p>(c) 2008-2020 <a href=https://www.tapaal.net>TAPAAL Team</a></p>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=/></a> > <a href=/gui/>GUI Reference</a> > Overview
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#main-menu>Main Menu</a></li>
+<li><a href=#toolbar>Toolbar</a></li>
+<li><a href=#open-tabs>Open tabs</a></li>
+<li><a href=#side-menu--workspace>Side menu / Workspace</a></li>
+<li><a href=#drawing-canvas>Drawing Canvas</a>
+<ul>
+<li><a href=#navigation>Navigation</a></li>
+<li><a href=#zoom>Zoom</a></li>
+<li><a href=#grid>Grid</a></li>
+</ul>
+</li>
+<li><a href=#feature-indicator>Feature indicator</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<div id=body-inner>
+<h1>
+Overview
+</h1>
+<p>This introduction assumes that you are already familiar with the basic concepts of a Petri Nets, if not
+please consider starting with the Introduction to Petri Nets sections TODO: .</p>
+<p>The TAPAAL Main Window consist of the following components (see figure):</p>
+<ol>
+<li>Main menu</li>
+<li>Toolbar</li>
+<li>Open tabs</li>
+<li>Side menu</li>
+<li>Drawing canvas</li>
+<li>Feature indicator</li>
+</ol>
+<p>The content if each area will adopt based on the selected Petri Net features in the new net dialog.</p>
+<p><img src=/gui/tapaal-main-window.png alt="TAPAAL main window"></p>
+<p>The GUI consist of two main modes, editor mode aka. normal mode (shown above) and simulation mode (see section simulation). The current mode is indicated by the <img src=/gui/simulation-indicator.png alt="Simulation Mode"> button in the toolbar, when pressed (as in depicted) the GUI is in simulation mode.</p>
+<p>In the following section we will break down each of the main areas further.</p>
+<h2 id=main-menu>Main Menu</h2>
+<p>The main menu contains links to all features in the program, and is handy for looking up shortcut keys (written left of the action).</p>
+<ol>
+<li>Main Menu <br>
+Contains actions for opening, saving nets and for importing and exporting. The menu also contains the Example nets section, containing a number models showing off the features in TAPAAL.</li>
+<li>Edit & Draw Menu <br>
+Contains features for drawing and changing nets, See more in section editor TODO:</li>
+<li>Simulation Menu <br>
+Contains features used for simulation of nets, see more in section simulation TODO:</li>
+</ol>
+<p><img src=/gui/view-menu.png alt="View Menu"></p>
+<ol start=4>
+<li>View Menu
+<ol>
+<li>Zoom: Controls the zoom level of the canvas</li>
+<li>Node Spacing: Add or remove spacing between all elements on the canvas.</li>
+<li>Grid: Cycle the grid size, including disabling the grid. Align to grid will move the position of all elements to align with the grid.</li>
+<li>Display: Show or hide specific elements in the side menu or drawing canvas.</li>
+<li>Change Visibility: Quickly change the visibility settings for all or selected parts of the current net.</li>
+<li>Workspace: Simple workspace is useful for beginners that want to hide as much complexity as possible. The advanced workspace will show all settings. Save Workspace will make TAPAAL remember your choices.</li>
+</ol>
+</li>
+</ol>
+<p><img src=/gui/tools-menu.png alt="Tools Menu"></p>
+<ol start=5>
+<li>Tools Menu
+<ol>
+<li>Verify Query: verify the selected query, see section verification TODO:</li>
+<li>Net Statistics: Counts the number of places, transitions, arcs etc. in the net.</li>
+<li>Workflow Analysis: Open workflow mode, see section workflow nets TODO:</li>
+<li>Automatic Net Layout: Opens a dialog to automatically layout the components of the net.</li>
+<li>Merge Nets Components: Combine elements from components into a single component, see section editor for details about components. TODO:</li>
+<li>Unfold Nets: (Colors & Games only) Opens a new net where color and/or game features are unfolded.</li>
+<li>Batch Processing: Opens a specialized tool to run verification for several nets at the same time. See section batch verification. TODO:</li>
+<li>Engine Selection: Select a specific engine for verification, if you use UPPAAL for verification you will need to specify the path to verifyta here.</li>
+<li>Clear all preferences: Remove all stored preferences, on next star all settings will be back to default.</li>
+</ol>
+</li>
+<li>Help Menu <br>
+Contains useful links to external resources related to TAPAAL including this documentation. Including developer credits and automatic version check.</li>
+</ol>
+<h2 id=toolbar>Toolbar</h2>
+<p>The toolbar contains a quick alternative to using the Main Menu for a number of often used tasked.</p>
+<p>The toolbar can be divided into five main sections:</p>
+<p><img src=/gui/toolbar.png alt="TAPAAL Toolbar"></p>
+<ol>
+<li>Section 1
+<ol>
+<li>New net&mldr;</li>
+<li>Open Net&mldr;</li>
+<li>Save Net</li>
+<li>Safe Net As&mldr;</li>
+</ol>
+</li>
+<li>Section 2
+<ol>
+<li>Print</li>
+<li>Cut section</li>
+<li>Copy section</li>
+<li>Paste content of copy/past buffer</li>
+</ol>
+</li>
+<li>Section 3
+<ol>
+<li>Delete Selection</li>
+<li>Undo last action</li>
+<li>Redo previous undo action</li>
+<li>Zoom Out</li>
+<li>Select Zoom level</li>
+<li>Zoom In</li>
+</ol>
+</li>
+<li>Section 4
+<ol>
+<li>Select grid size/disable grid</li>
+<li>Start/Stop Animation mode</li>
+</ol>
+</li>
+<li>Section 5 <br>
+Draw tools, see details in section editor TODO:</li>
+</ol>
+<h2 id=open-tabs>Open tabs</h2>
+<p>Contains tabs for each open model. Switch between models by clicking on a tab. Use the (x) to close a tab.</p>
+<h2 id=side-menu--workspace>Side menu / Workspace</h2>
+<p>The the side menus content depends on the current mode (here shown edit mode) and selected modeling features.
+The menu consists of a number of widgets, specific widgets can be shown and hidden from the &ldquo;View&rdquo; to fit your need.</p>
+<p>In general a widget is marked by a border. The top dropdown menu allows you to select between different modes or values. Below is a list of values.
+<img src=/gui/side-panel-component.png alt="Constant Widget">
+In the button row you can add, edit or create new elements by selecting a element and pressing the appropriate button.</p>
+<p>You can resize a widget to fit your needs, by dragging the border with the mouse.</p>
+<p><img src=/gui/resize-widget.gif alt="Resize widget"></p>
+<p>You can change the order of a list by selecting an element and using the up and down arrows to rearrange elements. You can sort the list alphanumerically by selecting the <img src=/gui/sort-btn.png alt=Sort> icon. Notice that the sort icon might be hidden on smaller screen.</p>
+<p><img src=/gui/reorder-widget.gif alt="Reorder widget"></p>
+<p>For more details about features of individual widgets please consult the following sections: editor, simulation, verification, components, constants TODO:</p>
+<h2 id=drawing-canvas>Drawing Canvas</h2>
+<p>This is the place you can draw and simulate Petri Nets. In editor mode you can select any place or transition of the toolbar and click the canvas to place them.</p>
+<p>You can connect a place and transition by an Arc, by pressing a arc button on the toolbar and clicking between an place and transition.
+To edit the properties of a specific place, transition or arc, you can double click it, or right click and select <code>Edit</code></p>
+<h3 id=navigation>Navigation</h3>
+<p>If the net size exceeds the current canvas in size, you can use the scrollbars below and to the right of the canvas to move around. You can also navigate using the mouse scroll wheel or by right clicking and dragging on the canvas.</p>
+<h3 id=zoom>Zoom</h3>
+<p>You can increase or decrease the size of elements on the canvas by using zoom. Select a zoom level from the toolbar or main menu, or zoom using hotkey <code>Ctrl + mousewheel</code> or <code>Ctrl + J</code> / <code>Ctrl + K</code>.</p>
+<h3 id=grid>Grid</h3>
+<p>By default TAPAAL will align all components to the grid. You can customize the size of the grid using the <code>View - Cycle Grid</code> menu option or by selecting hotkey <code>G</code>.
+The grid cycles between 3 grid sizes and no grid. If a grid is used elements will automatically snap to the grid. You can also force all elements to align with the grid by selecting <code>View - Align to Grid</code>.</p>
+<p>See more in section editor TODO:</p>
+<h2 id=feature-indicator>Feature indicator</h2>
+<p>The feature indicator will display the current modeling features (and semantics) for the open net.
+You can at any time change the features available by clicking the feature indicator. A new net will be opened with the required modeling features enabled/disabled.</p>
+<p>If you remove a feature, you will be prompted to confirm and the used feature will be removed from the net (best effort).</p>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=/gui/ title="GUI Reference"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/gui/editor/ title=Editor style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=/js/clipboard.min.js?1640952846></script>
+<script src=/js/perfect-scrollbar.min.js?1640952846></script>
+<script src=/js/perfect-scrollbar.jquery.min.js?1640952846></script>
+<script src=/js/jquery.sticky.js?1640952846></script>
+<script src=/js/featherlight.min.js?1640952846></script>
+<script src=/js/highlight.pack.js?1640952846></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=/js/modernizr.custom-3.6.0.js?1640952846></script>
+<script src=/js/learn.js?1640952846></script>
+<script src=/js/hugo-learn.js?1640952846></script>
+<script src=/mermaid/mermaid.js?1640952846></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+</body>
+</html>
