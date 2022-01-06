@@ -19,7 +19,7 @@ The content if each area will adopt based on the selected Petri Net features in 
 
 ![TAPAAL main window](/gui/tapaal-main-window.png)
 
-The GUI consist of two main modes, editor mode aka. normal mode (shown above) and simulation mode (see section simulation). The current mode is indicated by the ![Simulation Mode](/gui/simulation-indicator.png) button in the toolbar, when pressed (as in depicted) the GUI is in simulation mode.
+The GUI consist of two main modes, editor mode aka. normal mode (shown above) and simulation mode (see section simulation). The current mode is indicated by the ![Simulation Mode](/gui/simulation-indicator.png?classes=inline) button in the toolbar, when pressed (as in depicted) the GUI is in simulation mode.
 
 In the following section we will break down each of the main areas further. 
 
@@ -107,7 +107,7 @@ You can resize a widget to fit your needs, by dragging the border with the mouse
 
 ![Resize widget](/gui/resize-widget.gif)
 
-You can change the order of a list by selecting an element and using the up and down arrows to rearrange elements. You can sort the list alphanumerically by selecting the ![Sort](/gui/sort-btn.png) icon. Notice that the sort icon might be hidden on smaller screen. 
+You can change the order of a list by selecting an element and using the up and down arrows to rearrange elements. You can sort the list alphanumerically by selecting the ![Sort](/gui/sort-btn.png?classes=inline) icon. Notice that the sort icon might be hidden on smaller screen. 
 
 ![Reorder widget](/gui/reorder-widget.gif)
 

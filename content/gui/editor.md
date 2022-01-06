@@ -14,16 +14,16 @@ Normally you will select a draw tool from the Toolbar, or using a hotkey, you ca
 
 | Icon | Tool   | Feature  | Hotkey  |
 |------|--------|----------|---------|
-| ![select](icons/select.png)     | Select | Any      | S       |
-| ![place](icons/place.png)     | Place  | Any      | P   |
-| ![transition](icons/transition.png)     | Transition  | Any  | T   |
-| ![urgent transition](icons/urgent-transition.png)     | Urgent Transition | Timed | Y |
-| ![Uncontrollable Transition](icons/uncontrollable-transition.png)     | Uncontrollable Transition | Game | L |
-| ![Uncontrollable Urgent Transition](icons/uncontrollable-urgent-transition.png)     | Uncontrollable Urgent Transition | Game + Time | O | 
-| ![arc](icons/arc.png)    | Arc    | Any | A |
-| ![transport arc](icons/transport-arc.png)    | Transport Arc | Timed | R | 
-| ![inhibitor arc](icons/inhibitor-arc.png)     | Inhibitor Arc | Timed | I | 
-| ![annotation](icons/annotation.png)     | Annotation/Note | Any | N | 
+| ![select](icons/select.png?classes=inline)     | Select | Any      | S       |
+| ![place](icons/place.png?classes=inline)     | Place  | Any      | P   |
+| ![transition](icons/transition.png?classes=inline)     | Transition  | Any  | T   |
+| ![urgent transition](icons/urgent-transition.png?classes=inline)     | Urgent Transition | Timed | Y |
+| ![Uncontrollable Transition](icons/uncontrollable-transition.png?classes=inline)     | Uncontrollable Transition | Game | L |
+| ![Uncontrollable Urgent Transition](icons/uncontrollable-urgent-transition.png?classes=inline)     | Uncontrollable Urgent Transition | Game + Time | O | 
+| ![arc](icons/arc.png?classes=inline)    | Arc    | Any | A |
+| ![transport arc](icons/transport-arc.png?classes=inline)    | Transport Arc | Timed | R | 
+| ![inhibitor arc](icons/inhibitor-arc.png?classes=inline)     | Inhibitor Arc | Timed | I | 
+| ![annotation](icons/annotation.png?classes=inline)     | Annotation/Note | Any | N | 
 
 For details about the semantics of each elements please reference the corresponding semantics section: TODO
 
@@ -83,7 +83,7 @@ Right-clicking an path point allows you to remove it or change the curve type.
 
 
 ## Components 
-TAPAAL allows you to decompose larger models into components. Components are connected via shared places and transitions (draw with a dotted line):
+TAPAAL allows you to decompose larger models into components. Components are connected via shared places and transitions (draw with a hairline):
 
 ![Shared place and transition](shared-pt.png) 
 
