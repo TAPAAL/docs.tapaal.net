@@ -43,6 +43,12 @@ Warning, if you step back in the trace history and fire a transition it will ove
 ## Time 
 When enabling time you can how preform time delay actions as well as transitions firings. Like transition firings, time delays are recorded to the simulation history. 
 
+Time delays are performed using the Time delay button in the side menu. 
+
+![Time Delay](time-delay.png)
+
+You can directly input a time delay in textbox next to the Time delay button and perform the delay by clicking the button, or you can use the slider 
+
 On the canvas it will still show enabled transitions by highlighting them 
 
 
