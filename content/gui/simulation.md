@@ -38,7 +38,7 @@ You can step back or forward in the simulation history by selecting `Step backwa
 For convenience this actions is also directly assessable from the "Simulation Control" widget in the side menu ![Step back/forward](history-control.png?classes=inline), or by using left and right keypad buttons. 
 You can also jump directly to any state by selecting it from the list. 
 
-Warning, if you step back in the trace history and fire a transition it will overwrite the rest of the trace from that point on. 
+_Warning:_ if you step back in the trace history and fire a transition it will overwrite the rest of the trace from that point on. 
 
 ## Time 
 When enabling time you can how preform time delay actions as well as transitions firings. Like transition firings, time delays are recorded to the simulation history. 
@@ -47,24 +47,51 @@ Time delays are performed using the Time delay button in the side menu.
 
 ![Time Delay](time-delay.png)
 
-You can directly input a time delay in textbox next to the Time delay button and perform the delay by clicking the button, or you can use the slider 
+You can directly input a time delay in textbox next to the Time delay button and perform the delay by clicking the button, or you can use the slider to select a fitting time delay. You can decrease or increase the slider range by pressing the `...` buttons located next to the slider. 
 
-On the canvas it will still show enabled transitions by highlighting them 
+After preforming a time delay the age of all tokens are updated accordantly. For places with two or less tokens you can see the current age of the token (with one decimal place of pression) directly. If a place contains more than two tokens, or for full precession age, move the mouse over the place:
 
+![Token age](token-age.png)
 
-----
-
-![Delay Enabled Transition](denabled-transition.png?classes=inline)
-
-The enabled transitions will now also show the time interval for which an transition can be fired, as well a transitions transitions that can be fired after some time delay. 
+Enabled transitions are highlighted in red. Transitions that can be fired after a given time-delay (d-enabled) will be highlighted in yellow: ![Delay Enabled Transition](denabled-transition.png?classes=inline). The enabled transitions widget will also show the time interval for which any transition is enabled. 
 
 ![Enabled Transitions Timed](enabled-transitions-timed.png)
 
+Firing an d-enabled transition by clicking it or by selecting it from the enabled transitions widget, will preform a time delay and fire the transition. The time delay and transition firing will be recorded to the Simulation History: 
+
+![Fire d-enabled](d-enabled.gif)
+
+### Delay mode
+
+By default TAPAAL will do the minimum available delay in order to enable to transitions. You can change this behavior by pressing `Settings` in the Enabled Transitions widget and selecting a different `Delay Mode`. By selecting manual delay you will be prompted for a time delay when firing a transition.
+
+The delay granularity affects the number of decimal points used for random simulation and what is the first value first value after a strict guard. A delay granularity of 0.01 would lead to a delay of 5.01 in case of the guard (5, inf).
+
+![Delay mode](delay-mode.png)
+
+### Token Selection
+
+When firing a transition TAPAAL will select the consumed tokens at random, from the list of tokens that satisfices the arc guard. You can configure this behavior by setting the `Token Selection` mode in the Simulation Control widget. 
+
+![Token Selection](token-selection.png)
+
+The tokens selection can be set to select tokens at random (default), consume the youngest tokens first, consume the oldest tokens first, or `manual` mode. When in manual model you will get a popup that enabled you to select the specific tokens consumed. _Notice that the dialog is not shown if TAPAAL can figure out that the resulting marking would be the same or there is only one choice_ 
+
+![Select tokens](select-token.gif)
 
 
+## Automatic Random Simulation 
 
+The simulator supports automatic random simulation. When enabled the simulator will automatically select a random transition to fire. 
+This can be useful to explore or show the behavior of a net. 
 
+To enabled random simulation press the `Settings` button in the Enabled Transitions Widget check the `Enable automatic random simulation`. 
+You can also configure the speed a which simulation is preformed. Now you can close the settings menu and start simulation by pressing the `simulate` button the the Enabled Transitions widget. 
 
-## Automatic Simulation 
+The automatic simulation can be stopped by pressing `Stop` button in the Simulation Controls popup. 
+![Simulation Control](auto-simulation-control.png). You can also adjust the simulation speed using the "Set simulation speed:" slider. 
+
+![Random Simulation](random-sim.gif)
+
 
 
