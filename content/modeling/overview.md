@@ -52,11 +52,11 @@ The main menu contains links to all features in the program and is useful for lo
    5. Tools Menu
       1. Verify Query: Verifies the selected query. See the [Verification](/verification/) section.
       2. Net Statistics: Counts the number of places, transitions, arcs, etc. in the net.
-      3. Workflow Analysis: Analyzes the net as a timed-arc workflow net. See [Tools and workflows](/tools/#workflow-analysis).
+      3. Workflow Analysis: Analyzes the net as a timed-arc workflow net. See [Tools and workflows](/tools/workflow-analysis/).
       4. Automatic Net Layout: Opens a dialog to automatically lay out the components of the net.
-      5. Merge Net Components: Combines elements from components into a single component. See [Components](/modeling/editor/#components) for details.
+      5. Merge Net Components: Combines elements from components into a single component. See [Components](/modeling/components/) for details.
       6. Unfold Nets: (Colors and Games only) Opens a new net in which color and/or game features are unfolded.
-      7. Batch Processing: Opens a specialized tool to verify several nets at the same time. See [Batch processing](/tools/#batch-processing).
+      7. Batch Processing: Opens a specialized tool to verify several nets at the same time. See [Batch processing](/tools/batch-processing/).
       8. Engine Selection: Selects a specific engine for verification. If you use UPPAAL for verification, you must specify the path to `verifyta` here.
       9. Clear All Preferences: Removes all stored preferences. On the next start, all settings will be restored to their defaults.
    6. Help Menu \

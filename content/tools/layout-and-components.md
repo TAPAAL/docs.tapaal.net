@@ -9,4 +9,4 @@ description: Rearrange a net automatically and merge components while preserving
 
 **Tools > Merge net components** combines the current components into one component. This can help when an engine or export workflow needs a single composed net, but it changes the presentation and may remove the modular structure that helps you reason about the model.
 
-For creating and editing components, see [Components in the editor](/modeling/editor/#components).
+For creating and editing components, see [Components in the editor](/modeling/components/). The older [Editor components anchor](/modeling/editor/#components) remains available for existing links.
