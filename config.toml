@@ -8,5 +8,5 @@ theme = "hugo-theme-learn"
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  # Change the default color scheme to one of the variants: "red", "blue", or "green".
   themeVariant = "blue"

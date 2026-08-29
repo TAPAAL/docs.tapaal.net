@@ -2,7 +2,7 @@
 
 
 {{% notice warning %}}
-This documentation site is Work-in-progress. Please reference the official documentation at www.tapaal.net. 
+This documentation site is a work in progress. Please refer to the official documentation at https://www.tapaal.net.
 {{% /notice %}}
 
-If you are familiar TAPAAL, please consider contributing to this new documentation side at https://github.com/tapaal/docs.tapaal.net.
+If you are familiar with TAPAAL, please consider contributing to this new documentation site at https://github.com/tapaal/docs.tapaal.net.
