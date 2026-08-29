@@ -1,10 +1,13 @@
 ---
 title: Overview
 weight: 10
+lastmod: 2026-08-29
+description: Identify the main window, menus, toolbar, side panel, canvas, tabs, and feature indicators.
+aliases:
+  - /gui/main-window/
 ---
 
-This introduction assumes that you are already familiar with the basic concepts of Petri nets. If not,
-please consider starting with the Introduction to Petri Nets section. TODO:
+This introduction assumes that you are already familiar with the basic concepts of Petri nets. If not, start with the [Petri net concepts](/concepts/petri-nets/) and [timed-arc semantics](/concepts/timed-arc-petri-nets/) pages.
 
 The TAPAAL main window consists of the following components (see figure):
 
@@ -19,6 +22,10 @@ The content of each area adapts to the selected Petri net features in the New Ne
 
 ![TAPAAL main window](/gui/tapaal-main-window.png)
 
+{{% notice warning %}}
+**TODO — screenshot:** Replace the main-window image with a current-release capture and add callouts for the menu bar, toolbar, tabs, workspace, canvas, and feature indicator. Include visible version/date metadata in the image caption.
+{{% /notice %}}
+
 The GUI consists of two main modes: editor mode (also called normal mode, shown above) and simulation mode (see the Simulation section). The current mode is indicated by the ![Simulation Mode](/gui/simulation-indicator.png?classes=inline) button in the toolbar. When the button is pressed, as shown, the GUI is in simulation mode.
 
 In the following sections, we will break down each of the main areas further.
@@ -30,9 +37,9 @@ The main menu contains links to all features in the program and is useful for lo
   1. Main Menu \
      Contains actions for opening and saving nets and for importing and exporting. The menu also contains the Example Nets section, which contains a number of models demonstrating TAPAAL's features.
   2. Edit & Draw Menu \
-     Contains features for drawing and changing nets. See the Editor section for more details. TODO:
+     Contains features for drawing and changing nets. See the [Editor](/modeling/editor/) section for more details.
   3. Simulation Menu \
-     Contains features used for simulating nets. See the Simulation section for more details. TODO:
+     Contains features used for simulating nets. See the [Simulation](/simulation/) section for more details.
 
 ![View Menu](/gui/view-menu.png)
 
@@ -46,14 +53,18 @@ The main menu contains links to all features in the program and is useful for lo
 
 ![Tools Menu](/gui/tools-menu.png)
 
+{{% notice warning %}}
+**TODO — content/review:** Audit the menu and toolbar inventories against the current source. Add a compact keyboard-shortcut table and identify which actions are hidden or disabled in Simple Workspace, simulation mode, or feature-specific models.
+{{% /notice %}}
+
    5. Tools Menu
-      1. Verify Query: Verifies the selected query. See the Verification section. TODO:
+      1. Verify Query: Verifies the selected query. See the [Verification](/verification/) section.
       2. Net Statistics: Counts the number of places, transitions, arcs, etc. in the net.
-      3. Workflow Analysis: Opens workflow mode. See the Workflow Nets section. TODO:
+      3. Workflow Analysis: Analyzes the net as a timed-arc workflow net. See [Tools and workflows](/tools/workflow-analysis/).
       4. Automatic Net Layout: Opens a dialog to automatically lay out the components of the net.
-      5. Merge Net Components: Combines elements from components into a single component. See the Editor section for details about components. TODO:
+      5. Merge Net Components: Combines elements from components into a single component. See [Components](/modeling/components/) for details.
       6. Unfold Nets: (Colors and Games only) Opens a new net in which color and/or game features are unfolded.
-      7. Batch Processing: Opens a specialized tool to run verification for several nets at the same time. See the Batch Verification section. TODO:
+      7. Batch Processing: Opens a specialized tool to verify several nets at the same time. See [Batch processing](/tools/batch-processing/).
       8. Engine Selection: Selects a specific engine for verification. If you use UPPAAL for verification, you must specify the path to `verifyta` here.
       9. Clear All Preferences: Removes all stored preferences. On the next start, all settings will be restored to their defaults.
    6. Help Menu \
@@ -88,7 +99,7 @@ The toolbar can be divided into five main sections:
     1. Select grid size/disable grid
     2. Start/stop animation mode
  5. Section 5 \
-    Drawing tools; see the Editor section for details. TODO:
+    Drawing tools; see the [Editor](/modeling/editor/) section for details.
 
 ## Open tabs
 
@@ -111,7 +122,11 @@ You can change the order of a list by selecting an element and using the up and 
 
 ![Reorder widget](/gui/reorder-widget.gif)
 
-For more details about the features of individual widgets, please consult the following sections: Editor, Simulation, Verification, Components, and Constants. TODO:
+{{% notice warning %}}
+**TODO — GIF:** Add a current Simple Workspace versus Advanced Workspace comparison. Show how to reveal, hide, resize, and reorder widgets, and document which workspace settings are persistent.
+{{% /notice %}}
+
+For more details about the features of individual widgets, consult the [Editor](/modeling/editor/), [Simulation](/simulation/), and [Verification](/verification/) sections. Components and constants are also covered in the [Tools and workflows](/tools/) reference.
 
 ## Drawing Canvas
 
@@ -130,7 +145,11 @@ You can increase or decrease the size of elements on the canvas by using the zoo
 By default, TAPAAL aligns all components to the grid. You can customize the grid size using the `View - Cycle Grid` menu option or by pressing the `G` hotkey.
 The grid cycles through three grid sizes and no grid. When a grid is enabled, elements automatically snap to it. You can also force all elements to align with the grid by selecting `View - Align to Grid`.
 
-See the Editor section for more details. TODO:
+See the [Editor](/modeling/editor/) section for more details.
+
+{{% notice warning %}}
+**TODO — GIF:** Add a short canvas-navigation recording covering scroll, pan, zoom, grid cycling, and **View > Align to Grid**. Confirm the mouse and keyboard shortcuts for Windows, macOS, and Linux.
+{{% /notice %}}
 
 ## Feature indicator
 
