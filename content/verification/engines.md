@@ -4,8 +4,6 @@ weight: 20
 lastmod: 2026-08-29
 ---
 
-# Engines and options
-
 TAPAAL can invoke several verification backends. The best choice depends on whether the model is untimed, timed, colored, stochastic, or uses special arcs and transitions.
 
 ## Select an engine

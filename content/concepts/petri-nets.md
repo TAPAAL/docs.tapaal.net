@@ -4,8 +4,6 @@ weight: 10
 lastmod: 2026-08-29
 ---
 
-# Ordinary Petri nets
-
 An ordinary (untimed, uncolored) Petri net has places, transitions, arcs, and tokens. It represents the possible states and discrete changes of a system.
 
 ## The notation

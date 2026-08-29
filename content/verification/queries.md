@@ -4,8 +4,6 @@ weight: 10
 lastmod: 2026-08-29
 ---
 
-# Queries and syntax
-
 {{% notice warning %}}
 Expert review needed: the examples and operator summaries are intended as user-facing guidance, not as the final formal logic specification. Confirm category-specific grammar and semantics before release.
 {{% /notice %}}

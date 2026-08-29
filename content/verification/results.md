@@ -4,8 +4,6 @@ weight: 30
 lastmod: 2026-08-29
 ---
 
-# Results and traces
-
 ## Read the result first
 
 The result belongs to the exact query and configuration that was run. Record the query name, formula, engine, extra-token capacity, reduction settings, and trace option before comparing runs.

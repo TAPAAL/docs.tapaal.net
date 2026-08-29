@@ -6,5 +6,3 @@ chapter: true
 lastmod: 2026-08-29
 ---
 
-# GUI Reference
-

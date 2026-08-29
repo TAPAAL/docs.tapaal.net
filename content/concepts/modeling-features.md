@@ -4,8 +4,6 @@ weight: 30
 lastmod: 2026-08-29
 ---
 
-# Modeling features
-
 {{% notice warning %}}
 Expert review needed: the feature summaries below are practical guidance derived from the current GUI and model classes. They should be checked against the authoritative formal semantics before release.
 {{% /notice %}}

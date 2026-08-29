@@ -6,8 +6,6 @@ chapter: true
 lastmod: 2026-08-29
 ---
 
-# Verification
-
 Verification checks a query against all relevant behaviors of a model, rather than exploring one manually chosen simulation path. TAPAAL delegates this work to a selected verification engine and can show a witness or counterexample trace when the engine produces one.
 
 {{% notice note %}}

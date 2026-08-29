@@ -4,8 +4,6 @@ weight: 20
 lastmod: 2026-08-29
 ---
 
-# Your first model
-
 ## Open the example
 
 The fastest way to see a complete TAPAAL model is to open the official [`intro-example.tapn`](https://download.tapaal.net/tapaal/resources/intro-example.tapn) file. You can also open it in the application through **File > Example nets > Timed-Arc Petri nets > intro-example**.

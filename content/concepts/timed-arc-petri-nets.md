@@ -4,8 +4,6 @@ weight: 20
 lastmod: 2026-08-29
 ---
 
-# Timed-arc Petri nets
-
 {{% notice warning %}}
 Expert review needed: this page summarizes the implementation-oriented semantics used by the current GUI. Please verify the formal definitions against the intended TAPAAL publication before treating this page as a specification.
 {{% /notice %}}

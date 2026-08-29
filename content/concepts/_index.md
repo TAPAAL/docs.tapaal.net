@@ -6,8 +6,6 @@ chapter: true
 lastmod: 2026-08-29
 ---
 
-# Concepts
-
 TAPAAL models systems as Petri nets. The pages in this chapter introduce the notation first, then explain timing and the optional features available in the editor.
 
 {{% notice note %}}

@@ -4,8 +4,6 @@ weight: 10
 lastmod: 2026-08-29
 ---
 
-# Installation
-
 ## Released application
 
 Download the package for your operating system from the [official TAPAAL download page](https://www.tapaal.net/download/). The page currently provides 64-bit packages for Windows, Linux, Intel macOS, and Apple-silicon (Arm) macOS.

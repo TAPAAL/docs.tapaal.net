@@ -4,8 +4,6 @@ weight: 50
 lastmod: 2026-08-29
 ---
 
-# Tools and workflows
-
 This page summarizes the major actions in the **Tools** and **File** menus. Availability depends on the model features and current workspace.
 
 ## Workflow analysis
