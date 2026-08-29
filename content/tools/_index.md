@@ -1,7 +1,11 @@
 ---
 title: Tools and workflows
-weight: 50
+weight: 60
+pre: "<b>6. </b>"
+chapter: true
 lastmod: 2026-08-29
+aliases:
+  - /gui/tools/
 ---
 
 This page summarizes the major actions in the **Tools** and **File** menus. Availability depends on the model features and current workspace.

@@ -1,7 +1,7 @@
 ---
 title: Command Line
-weight: 50
-pre: "<b>5. </b>"
+weight: 70
+pre: "<b>7. </b>"
 chapter: true
 lastmod: 2026-08-29
 ---

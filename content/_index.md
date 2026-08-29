@@ -6,8 +6,10 @@ TAPAAL is an editor, simulator, and verifier for timed-arc Petri nets. This site
 
 - [Start here](/start-here/): install TAPAAL, open the introductory model, simulate it, and run your first query.
 - [Concepts](/concepts/): learn the notation and semantics behind ordinary and timed-arc Petri nets.
-- [GUI reference](/gui/): learn the editor, simulator, main window, and verification controls.
+- [Modeling](/modeling/): learn the main window and editor for creating and refining nets.
+- [Simulation](/simulation/): explore enabled transitions, time delays, token ages, and traces.
 - [Verification](/verification/): construct queries, select an engine, interpret results, and inspect traces.
+- [Tools and workflows](/tools/): use workflow analysis, batch processing, unfolding, engine configuration, and import/export.
 - [Command line](/command-line/): build TAPAAL from source and prepare models and queries for engine use.
 
 {{% notice note %}}

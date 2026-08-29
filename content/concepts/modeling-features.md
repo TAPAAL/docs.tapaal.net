@@ -22,7 +22,7 @@ Transport arcs connect a source place to a transition and that transition to a d
 
 Large models can be split into components. A shared place or shared transition appears in more than one component and connects their behavior. TAPAAL draws shared elements with a hairline. Disabling a component removes it from simulation and verification, which is useful for comparing alternative implementations.
 
-See [Components in the editor](/gui/editor/#components) for the creation workflow. **Tools > Merge net components** creates a single component containing the selected model's elements.
+See [Components in the editor](/modeling/editor/#components) for the creation workflow. **Tools > Merge net components** creates a single component containing the selected model's elements.
 
 ## Colors and variables
 
