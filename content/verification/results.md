@@ -8,9 +8,13 @@ lastmod: 2026-08-29
 
 The result belongs to the exact query and configuration that was run. Record the query name, formula, engine, extra-token capacity, reduction settings, and trace option before comparing runs.
 
+The result dialog may also include verification statistics, transition statistics, memory information, raw engine output, or a note that an approximation is inconclusive. Keep these details with the headline status when reporting a result.
+
 - **Satisfied** means the engine established the property requested by the query.
 - **Not satisfied** means the engine established that the property does not hold for the analyzed model and settings.
 - **Inconclusive, aborted, or failed** means that the run did not establish either truth value. Check the diagnostic text, engine path, bounds, and model/query support before interpreting it as a model result.
+
+If the engine reports an approximation as inconclusive, do not rewrite it as **satisfied** or **not satisfied**. Change the model, bound, query, or analysis method and run the check again, or ask an expert to interpret the approximation.
 
 The meaning of a trace depends on the path quantifier:
 
@@ -55,3 +59,7 @@ Reduce the model to a small scenario, verify boundedness, increase the extra-tok
 ### The trace is missing
 
 Select **Some trace** or **Fastest trace** before verification. Some engines or query forms cannot produce a trace, and selecting **No trace** explicitly suppresses trace generation.
+
+{{% notice warning %}}
+Expert review needed: the precise relationship between result labels, approximation modes, and engine diagnostics is backend-specific. Confirm these interpretations against the target TAPAAL release and representative result dialogs.
+{{% /notice %}}
