@@ -1,10 +1,10 @@
 ---
 title: Overview
 weight: 10
+lastmod: 2026-08-29
 ---
 
-This introduction assumes that you are already familiar with the basic concepts of Petri nets. If not,
-please consider starting with the Introduction to Petri Nets section. TODO:
+This introduction assumes that you are already familiar with the basic concepts of Petri nets. If not, start with the [Petri net concepts](/concepts/petri-nets/) and [timed-arc semantics](/concepts/timed-arc-petri-nets/) pages.
 
 The TAPAAL main window consists of the following components (see figure):
 
@@ -30,9 +30,9 @@ The main menu contains links to all features in the program and is useful for lo
   1. Main Menu \
      Contains actions for opening and saving nets and for importing and exporting. The menu also contains the Example Nets section, which contains a number of models demonstrating TAPAAL's features.
   2. Edit & Draw Menu \
-     Contains features for drawing and changing nets. See the Editor section for more details. TODO:
+     Contains features for drawing and changing nets. See the [Editor](/gui/editor/) section for more details.
   3. Simulation Menu \
-     Contains features used for simulating nets. See the Simulation section for more details. TODO:
+     Contains features used for simulating nets. See the [Simulation](/gui/simulation/) section for more details.
 
 ![View Menu](/gui/view-menu.png)
 
@@ -47,13 +47,13 @@ The main menu contains links to all features in the program and is useful for lo
 ![Tools Menu](/gui/tools-menu.png)
 
    5. Tools Menu
-      1. Verify Query: Verifies the selected query. See the Verification section. TODO:
+      1. Verify Query: Verifies the selected query. See the [Verification](/verification/) section.
       2. Net Statistics: Counts the number of places, transitions, arcs, etc. in the net.
-      3. Workflow Analysis: Opens workflow mode. See the Workflow Nets section. TODO:
+      3. Workflow Analysis: Analyzes the net as a timed-arc workflow net. See [Tools and workflows](/gui/tools/#workflow-analysis).
       4. Automatic Net Layout: Opens a dialog to automatically lay out the components of the net.
-      5. Merge Net Components: Combines elements from components into a single component. See the Editor section for details about components. TODO:
+      5. Merge Net Components: Combines elements from components into a single component. See [Components](/gui/editor/#components) for details.
       6. Unfold Nets: (Colors and Games only) Opens a new net in which color and/or game features are unfolded.
-      7. Batch Processing: Opens a specialized tool to run verification for several nets at the same time. See the Batch Verification section. TODO:
+      7. Batch Processing: Opens a specialized tool to verify several nets at the same time. See [Batch processing](/gui/tools/#batch-processing).
       8. Engine Selection: Selects a specific engine for verification. If you use UPPAAL for verification, you must specify the path to `verifyta` here.
       9. Clear All Preferences: Removes all stored preferences. On the next start, all settings will be restored to their defaults.
    6. Help Menu \
@@ -88,7 +88,7 @@ The toolbar can be divided into five main sections:
     1. Select grid size/disable grid
     2. Start/stop animation mode
  5. Section 5 \
-    Drawing tools; see the Editor section for details. TODO:
+    Drawing tools; see the [Editor](/gui/editor/) section for details.
 
 ## Open tabs
 
@@ -111,7 +111,7 @@ You can change the order of a list by selecting an element and using the up and 
 
 ![Reorder widget](/gui/reorder-widget.gif)
 
-For more details about the features of individual widgets, please consult the following sections: Editor, Simulation, Verification, Components, and Constants. TODO:
+For more details about the features of individual widgets, consult the [Editor](/gui/editor/), [Simulation](/gui/simulation/), and [Verification](/verification/) sections. Components and constants are also covered in the [tools reference](/gui/tools/).
 
 ## Drawing Canvas
 
@@ -130,7 +130,7 @@ You can increase or decrease the size of elements on the canvas by using the zoo
 By default, TAPAAL aligns all components to the grid. You can customize the grid size using the `View - Cycle Grid` menu option or by pressing the `G` hotkey.
 The grid cycles through three grid sizes and no grid. When a grid is enabled, elements automatically snap to it. You can also force all elements to align with the grid by selecting `View - Align to Grid`.
 
-See the Editor section for more details. TODO:
+See the [Editor](/gui/editor/) section for more details.
 
 ## Feature indicator
 

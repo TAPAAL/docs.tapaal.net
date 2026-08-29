@@ -1,9 +1,10 @@
 ---
 title: Editor
 weight: 20
+lastmod: 2026-08-29
 ---
 
-To start editing a Petri net, open an existing net using the Open dialog, open an example net from the `File - Example Net` menu, or create a new net by selecting `File - New net`.
+To start editing a Petri net, open an existing net using the Open dialog, open an example net from the `File > Example nets` menu, or create a new net by selecting `File > New net`.
 
 If you create a new net, select the modeling features you want to use. Depending on the features you select, the GUI will adapt its available options.
 
@@ -25,7 +26,7 @@ Normally, you select a drawing tool from the toolbar or use a hotkey. You can lo
 | ![inhibitor arc](icons/inhibitor-arc.png?classes=inline)     | Inhibitor Arc | Timed | I | 
 | ![annotation](icons/annotation.png?classes=inline)     | Annotation/Note | Any | N | 
 
-For details about the semantics of each element, please refer to the corresponding semantics section: TODO
+For details about the semantics of each element, see [Petri net concepts](/concepts/petri-nets/), [timed-arc semantics](/concepts/timed-arc-petri-nets/), and [advanced modeling features](/concepts/modeling-features/).
 
 ## Draw 
 To start drawing, select a drawing tool from the toolbar or use a hotkey.
@@ -67,6 +68,48 @@ You can edit a place, transition, or arc by right-clicking it and selecting `Edi
 This will open a menu that allows you to change the properties of the element. The available options depend on the selected modeling features.
 
 ![Edit place transition or arc](edit.gif)
+
+## Configure the model
+
+The feature indicator at the bottom of the main window shows whether the current model uses **Timed**, **Game**, **Color**, and **Stochastic** features. Select the feature's `Yes` or `No` value to change the model configuration. TAPAAL may ask for confirmation before removing a feature because elements that depend on it can be changed or removed.
+
+Start with the smallest feature set that expresses your model. For example, use an untimed model for basic control flow, enable **Timed** when token ages or deadlines matter, and enable **Color** when many similar tokens would otherwise require duplicated structure.
+
+{{% notice warning %}}
+Expert review needed: the descriptions of feature semantics in this page and the Concepts chapter are implementation-guided drafts. Verify them against the formal TAPAAL semantics before using them as a teaching specification.
+{{% /notice %}}
+
+### Places
+
+Double-click a place, or right-click it and choose `Edit`, to change its name and initial marking. In a timed model, the same dialog lets you set the place invariant. In a colored model, choose the place's color type and define the initial colored tokens.
+
+Keep names short and unique within their component. Use the same names consistently in queries; the query editor can qualify a place with its component or template when a model contains duplicates.
+
+### Transitions
+
+Edit a transition to change its name and, when the feature is enabled, its timing or game properties. The toolbar also provides separate tools for urgent, uncontrollable, and uncontrollable-urgent transitions.
+
+An urgent transition is useful when an enabled action must happen before time advances. An uncontrollable transition represents behavior that a controller cannot choose or prevent in a game model. Use these types only when they reflect the system being modeled; they change which verification questions are meaningful.
+
+### Standard and timed arcs
+
+Create a standard arc between a place and a transition, then edit it to set its weight. In a timed model, edit the input arc's time interval to restrict which token ages can be consumed. The default unrestricted interval is `[0, inf)`.
+
+Use square brackets to include an endpoint and parentheses to exclude it. For example, `[2, 5)` accepts ages from 2 up to, but not including, 5. Constants can be used in intervals when they have been declared in the constants pane.
+
+### Transport and inhibitor arcs
+
+Select the **Transport Arc** tool to draw a paired route through a transition. TAPAAL keeps the input and output sides together; edit the pair when changing its weight, interval, or colored expression.
+
+Select the **Inhibitor Arc** tool to add a negative enabling condition. Edit its weight to control how many source tokens prevent the transition from firing. If an arc cannot be drawn, read the validation message: TAPAAL rejects structures that are invalid for the current feature combination.
+
+See [timed-arc semantics](/concepts/timed-arc-petri-nets/) and [modeling features](/concepts/modeling-features/) for the behavior of these elements. The formal descriptions are drafts and require expert review.
+
+### Colored expressions
+
+When **Color** is enabled, open **Tools > Show color types/variables/constants** to inspect the global definitions. Select a color type for a place, then use arc expressions to describe the colors consumed and produced by a firing. Variables must be declared with a color type before they can be used in expressions.
+
+For a first colored model, use one of the colored examples under **File > Example nets**. Keep the model small while learning how bindings affect enabled transitions; use **Tools > Unfold nets** when you need to inspect the corresponding uncolored representation.
 
 
 ### Arc Path

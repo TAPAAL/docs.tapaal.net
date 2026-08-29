@@ -1,6 +1,7 @@
 ---
 title: Simulation
 weight: 30
+lastmod: 2026-08-29
 ---
 
 This section explains how TAPAAL can be used to simulate the behavior of a Petri net.
