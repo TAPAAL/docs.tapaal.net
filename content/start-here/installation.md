@@ -2,6 +2,7 @@
 title: Installation
 weight: 10
 lastmod: 2026-08-29
+description: Install TAPAAL and prepare Java on Windows, Linux, and macOS.
 ---
 
 ## Released application

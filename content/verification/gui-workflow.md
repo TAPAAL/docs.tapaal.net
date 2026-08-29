@@ -1,7 +1,8 @@
 ---
 title: Verification from the GUI
-weight: 5
+weight: 10
 lastmod: 2026-08-29
+description: Follow the GUI workflow from a saved model and query to a result and reproducible trace.
 ---
 
 This is the practical path from a model on the canvas to a result you can inspect. For the meaning of the operators, see [Queries and syntax](../queries/). For engine-specific behavior, see [Engines and options](../engines/).

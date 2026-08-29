@@ -2,6 +2,7 @@
 title: Timed-arc Petri nets
 weight: 20
 lastmod: 2026-08-29
+description: Learn how token ages, intervals, invariants, and time delays extend Petri-net behavior.
 ---
 
 {{% notice warning %}}

@@ -2,6 +2,7 @@
 title: Editor
 weight: 20
 lastmod: 2026-08-29
+description: Create and edit places, transitions, arcs, tokens, annotations, and components in the GUI.
 aliases:
   - /gui/editor/
 ---

@@ -2,6 +2,7 @@
 title: Ordinary Petri nets
 weight: 10
 lastmod: 2026-08-29
+description: Learn the places, transitions, arcs, markings, and firing rules used in ordinary Petri nets.
 ---
 
 An ordinary (untimed, uncolored) Petri net has places, transitions, arcs, and tokens. It represents the possible states and discrete changes of a system.

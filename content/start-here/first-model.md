@@ -2,6 +2,7 @@
 title: Your first model
 weight: 20
 lastmod: 2026-08-29
+description: Open the introductory model, simulate it, create a query, and inspect a verification trace.
 ---
 
 ## Open the example

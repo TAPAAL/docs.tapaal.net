@@ -1,7 +1,8 @@
 ---
 title: Engines and options
-weight: 20
+weight: 40
 lastmod: 2026-08-29
+description: Configure verification backends and choose bounds, reductions, searches, and trace options.
 ---
 
 TAPAAL can invoke several verification backends. The best choice depends on whether the model is untimed, timed, colored, stochastic, or uses special arcs and transitions. TAPAAL's GUI checks the selected engine's advertised model and query support and may hide or disable incompatible controls.

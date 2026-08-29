@@ -1,7 +1,8 @@
 ---
 title: Results and traces
-weight: 30
+weight: 60
 lastmod: 2026-08-29
+description: Interpret statuses, witnesses, counterexamples, diagnostics, and incomplete verification runs.
 ---
 
 ## Read the result first

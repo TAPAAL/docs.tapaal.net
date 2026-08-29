@@ -2,6 +2,7 @@
 title: Overview
 weight: 10
 lastmod: 2026-08-29
+description: Identify the main window, menus, toolbar, side panel, canvas, tabs, and feature indicators.
 aliases:
   - /gui/main-window/
 ---

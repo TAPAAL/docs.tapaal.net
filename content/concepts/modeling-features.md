@@ -2,6 +2,7 @@
 title: Modeling features
 weight: 30
 lastmod: 2026-08-29
+description: Review urgent, transport, inhibitor, colored, game, stochastic, and component features.
 ---
 
 {{% notice warning %}}

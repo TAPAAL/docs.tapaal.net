@@ -1,7 +1,8 @@
 ---
 title: Queries and syntax
-weight: 10
+weight: 20
 lastmod: 2026-08-29
+description: Construct reachability, safety, temporal, and stochastic queries in the query pane.
 ---
 
 {{% notice warning %}}
