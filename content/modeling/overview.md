@@ -22,6 +22,10 @@ The content of each area adapts to the selected Petri net features in the New Ne
 
 ![TAPAAL main window](/gui/tapaal-main-window.png)
 
+{{% notice warning %}}
+**TODO — screenshot:** Replace the main-window image with a current-release capture and add callouts for the menu bar, toolbar, tabs, workspace, canvas, and feature indicator. Include visible version/date metadata in the image caption.
+{{% /notice %}}
+
 The GUI consists of two main modes: editor mode (also called normal mode, shown above) and simulation mode (see the Simulation section). The current mode is indicated by the ![Simulation Mode](/gui/simulation-indicator.png?classes=inline) button in the toolbar. When the button is pressed, as shown, the GUI is in simulation mode.
 
 In the following sections, we will break down each of the main areas further.
@@ -48,6 +52,10 @@ The main menu contains links to all features in the program and is useful for lo
      6. Workspace: Simple Workspace is useful for beginners who want to hide as much complexity as possible. Advanced Workspace shows all settings. Save Workspace makes TAPAAL remember your choices.
 
 ![Tools Menu](/gui/tools-menu.png)
+
+{{% notice warning %}}
+**TODO — content/review:** Audit the menu and toolbar inventories against the current source. Add a compact keyboard-shortcut table and identify which actions are hidden or disabled in Simple Workspace, simulation mode, or feature-specific models.
+{{% /notice %}}
 
    5. Tools Menu
       1. Verify Query: Verifies the selected query. See the [Verification](/verification/) section.
@@ -114,6 +122,10 @@ You can change the order of a list by selecting an element and using the up and 
 
 ![Reorder widget](/gui/reorder-widget.gif)
 
+{{% notice warning %}}
+**TODO — GIF:** Add a current Simple Workspace versus Advanced Workspace comparison. Show how to reveal, hide, resize, and reorder widgets, and document which workspace settings are persistent.
+{{% /notice %}}
+
 For more details about the features of individual widgets, consult the [Editor](/modeling/editor/), [Simulation](/simulation/), and [Verification](/verification/) sections. Components and constants are also covered in the [Tools and workflows](/tools/) reference.
 
 ## Drawing Canvas
@@ -134,6 +146,10 @@ By default, TAPAAL aligns all components to the grid. You can customize the grid
 The grid cycles through three grid sizes and no grid. When a grid is enabled, elements automatically snap to it. You can also force all elements to align with the grid by selecting `View - Align to Grid`.
 
 See the [Editor](/modeling/editor/) section for more details.
+
+{{% notice warning %}}
+**TODO — GIF:** Add a short canvas-navigation recording covering scroll, pan, zoom, grid cycling, and **View > Align to Grid**. Confirm the mouse and keyboard shortcuts for Windows, macOS, and Linux.
+{{% /notice %}}
 
 ## Feature indicator
 

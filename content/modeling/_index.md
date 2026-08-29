@@ -17,3 +17,7 @@ The [Concepts](/concepts/) chapter explains the notation and semantics behind th
 {{% notice note %}}
 This section is a GUI reference. It assumes that you already know the basic Petri-net concepts; the [Concepts](/concepts/) chapter provides the background when you need it.
 {{% /notice %}}
+
+{{% notice warning %}}
+**Documentation TODOs:** Items marked **TODO — screenshot**, **TODO — GIF**, **TODO — worked example**, or **TODO — content/review** are editorial placeholders. Each marker describes the asset or explanation to add and any version or expert review needed before publication.
+{{% /notice %}}

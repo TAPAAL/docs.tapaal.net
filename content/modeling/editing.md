@@ -23,6 +23,10 @@ Drag the text label associated with a place, transition, or arc to reposition it
 
 ![Edit a place, transition, or arc](/gui/editor/edit.gif)
 
+{{% notice warning %}}
+**TODO — screenshot:** Add one annotated screenshot for each important property dialog: place marking/invariant, transition timing or game settings, timed input-arc interval, transport-arc pair, and inhibitor-arc weight. Identify which fields appear only when a feature is enabled.
+{{% /notice %}}
+
 ## Edit arc paths
 
 When an arc is selected, its path points appear. Drag a point to change the route. Right-click a path point to remove it or change its curve type.
@@ -33,4 +37,12 @@ To insert a path point after drawing, double-click the arc while holding `Ctrl`,
 
 ![Edit arc path](/gui/editor/edit-arcpath.png)
 
+{{% notice warning %}}
+**TODO — GIF:** Add a current recording showing how to insert, drag, curve, and remove arc path points. Include the `Ctrl` and `Shift` modifiers and explain how to select a path point when an arc has several overlapping segments.
+{{% /notice %}}
+
 See [Drawing](../drawing/) for the tools used to create elements and arcs. See [Model configuration](../model-configuration/) for editing markings, intervals, invariants, and feature-specific properties.
+
+{{% notice warning %}}
+**TODO — content/review:** Expand the keyboard and selection reference. Document multi-selection, label selection, undo/redo, and any platform-specific modifier-key differences, then verify the behavior with the current GUI.
+{{% /notice %}}

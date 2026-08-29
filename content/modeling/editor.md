@@ -26,6 +26,14 @@ Use the pages below as a task-oriented path through the editor:
 
 TAPAAL prevents invalid structures during editing and displays a warning when an attempted change is not valid for the current feature combination. For the underlying notation and semantics, see [Petri net concepts](/concepts/petri-nets/), [timed-arc semantics](/concepts/timed-arc-petri-nets/), and [modeling features](/concepts/modeling-features/).
 
+{{% notice warning %}}
+**TODO — GIF:** Add a short, versioned end-to-end editor walkthrough: create a new net, draw a minimal model, edit one property, and switch to simulation mode. Keep it under one minute and annotate the keyboard shortcuts used in the recording.
+{{% /notice %}}
+
+{{% notice warning %}}
+**TODO — content/review:** Add a small "Which page should I use?" decision table for beginners and verify that the workflow and menu labels match the current release on Windows, macOS, and Linux.
+{{% /notice %}}
+
 ## Components
 
 For compatibility with existing links, the components topic is also available from this heading: see [Components](../components/).
