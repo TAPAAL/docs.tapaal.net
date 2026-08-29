@@ -8,6 +8,8 @@ aliases:
   - /gui/
 ---
 
+# Modeling
+
 Modeling is where you create and refine a TAPAAL net. Start with [Overview](overview/) to learn the main window, then use the [Editor](editor/) reference for drawing and editing places, transitions, arcs, components, and model features.
 
 The [Concepts](/concepts/) chapter explains the notation and semantics behind the elements you create here. When the model is ready, continue to [Simulation](/simulation/) for interactive exploration or [Verification](/verification/) for query-based analysis.

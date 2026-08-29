@@ -6,6 +6,8 @@ chapter: true
 lastmod: 2026-08-29
 ---
 
+# Start here
+
 This short path takes you from installation to a verified model. It uses the `intro-example.tapn` model supplied by TAPAAL, which demonstrates modeling, simulation, and verification in one file.
 
 {{% notice note %}}

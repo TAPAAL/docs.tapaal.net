@@ -6,6 +6,8 @@ chapter: true
 lastmod: 2026-08-29
 ---
 
+# Verification
+
 Verification checks a property against the behaviors represented by a model, rather than exploring only one manually chosen simulation path. In TAPAAL, you express the property as a query, choose an analysis engine and options, run the query, and then inspect the result and any generated trace.
 
 This is one of TAPAAL's central workflows. The official feature overview lists reachability analysis, CTL, LTL, and HyperLTL verification, along with stochastic model checking and an optional UPPAAL backend. The available subset still depends on the model, query category, engine, and release.

@@ -8,6 +8,8 @@ aliases:
   - /gui/simulation/
 ---
 
+# Simulation
+
 This section explains how TAPAAL can be used to simulate the behavior of a Petri net.
 In simulation mode, you can simulate the model by firing transitions and advancing time. This feature can help you discover simple errors in your model by allowing you to examine whether it behaves as intended.
 

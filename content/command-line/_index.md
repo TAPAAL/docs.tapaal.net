@@ -6,6 +6,8 @@ chapter: true
 lastmod: 2026-08-29
 ---
 
+# Command Line
+
 This page is a draft reference for running TAPAAL-related tools outside the GUI. The GUI can export models and queries for batch verification, while the individual verification engines accept their own command-line options.
 
 {{% notice note %}}
