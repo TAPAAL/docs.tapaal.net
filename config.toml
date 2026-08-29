@@ -1,4 +1,4 @@
-languageCode = "en-us"
+locale = "en-US"
 title = "TAPAAL Documentation"
 
 theme = "hugo-theme-learn"
