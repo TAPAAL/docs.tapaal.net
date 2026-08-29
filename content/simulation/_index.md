@@ -12,4 +12,4 @@ Simulation lets you explore a model one execution at a time. Use it to check the
 Simulation is an exploration and debugging aid. It does not establish that all executions satisfy a property; use [Verification](/verification/) for that.
 {{% /notice %}}
 
-{{% children style="h2" description="true" %}}
+{{% children style="li" description="true" %}}

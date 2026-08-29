@@ -12,7 +12,7 @@ Modeling is where you create and refine a TAPAAL net. Start with the main-window
 
 The [Concepts](/concepts/) chapter explains the notation and semantics behind the elements you create here. When the model is ready, continue to [Simulation](/simulation/) for interactive exploration or [Verification](/verification/) for query-based analysis.
 
-{{% children style="h2" description="true" %}}
+{{% children style="li" description="true" %}}
 
 {{% notice note %}}
 This section is a GUI reference. It assumes that you already know the basic Petri-net concepts; the [Concepts](/concepts/) chapter provides the background when you need it.

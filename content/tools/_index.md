@@ -14,4 +14,4 @@ The **Tools** and **File** menus provide analyses, transformations, batch operat
 This section is a GUI reference. Use [Verification](/verification/) for the concepts behind queries, engines, bounds, and result interpretation.
 {{% /notice %}}
 
-{{% children style="h2" description="true" %}}
+{{% children style="li" description="true" %}}
